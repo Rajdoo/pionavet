@@ -1,0 +1,74 @@
+@use '_colors.scss' as *;
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section{
+    position: relative;
+    display: flex;
+    background-color: $white;
+    padding: 5em 0;
+}
+
+.section_grey{
+    background-color: $lightGrey;
+}
+
+.section__title{
+    position: relative;
+    font-size: 3rem;
+    width: 200px;
+    padding: 0.3em;
+    margin: 0 1em;
+    font-weight: normal;
+    color: $mainColor;
+    text-align: center;
+    z-index: 10;
+
+
+    &::before,
+    &::after{
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 50%;
+    }
+
+            
+    &::after{
+        top: -2px;
+        left: -8px;
+        border-top: 3px solid $mainColor;
+        border-left: 3px solid $mainColor;
+    }
+    
+    &::before{
+        bottom: -2px;
+        right: -8px;
+        border-bottom: 3px solid $mainColor;
+        border-right: 3px solid $mainColor;
+    }
+
+}
+
+.grey_block{
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 70px solid transparent;
+	border-left: 195vh solid $lightGrey;
+    bottom: 0;
+    right: 0;
+}
+.white_block{
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 70px solid transparent;
+	border-left: 195vh solid $white;
+    bottom: 0;
+    right: 0;
+}

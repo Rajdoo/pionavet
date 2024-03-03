@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <title>Gabinet weterynaryjny Mitkowscy - Koronowo</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,11 +11,159 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet"> 
 
     <script src="https://kit.fontawesome.com/156df4e152.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="sass/main.scss">
+
+    <link rel="stylesheet" href="sass/main.css">
 </head>
 <body>
-    
+    <nav class="nav nav-mobile">
+        <a href="index.html" class="nav__logo"><img class="nav__logo-icon" src="img/logo.png" alt="logo"></a>
+        <button class="nav__button"><div class="nav__button-line"></div></button>
+        <div class="nav__link-box">
+            <a href="site/ourTeam.html" class="nav__link">nasz zespół</a>
+            <a href="site/services.html" class="nav__link">usługi</a>
+            <a href="site/gallery.html" class="nav__link">galeria</a>
+            <a href="site/contact.html" class="nav__link">kontakt</a>
+        </div>
+    </nav>
+    <nav class="nav nav-desktop">
+        <div class="wrapper">
+            <a href="index.html" class="nav__logo"><img class="nav__logo-icon" src="img/logo.png" alt="logo"></a>
+            <div class="nav__link-box">
+                <a href="site/ourTeam.html" class="nav__link">nasz zespół</a>
+                <a href="site/services.html" class="nav__link">usługi</a>
+                <a href="site/gallery.html" class="nav__link">galeria</a>
+                <a href="site/contact.html" class="nav__link">kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <img src="img/banerMobile.png" alt="baner" class="header__banerMobile">
+        <img src="img/banerDesktop.png" alt="baner" class="header__banerDesktop">
+    </header>
+    <main>
+        <section class="team section section_grey">
+            <div class="wrapper">
+                <h2 class="section__title">Nasz zespół</h2>
+                <div class="team__box">
+                    <img src="img/ourteam.jpg" alt="our team" class="team__img">
+                    <p class="team__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea fugit, commodi illo quod similique culpa, corporis eum sequi asperiores animi numquam voluptatibus. Id adipisci nemo in et fugiat vero.</p>
+                </div>                
+            </div>
+            <div class="white_block"></div>
+        </section>
+        <section class="services section">
+            <div class="wrapper">
+                <h2 class="section__title">Usługi</h2>
+                <div class="services__box">
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-shield-virus services__boxes-picture"></i>
+                        <p class="services__boxes-title">profilaktyka chorób</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-flask-vial services__boxes-picture"></i>
+                        <p class="services__boxes-title">diagnostyka laboratoryjna</p>  
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-briefcase-medical services__boxes-picture"></i>
+                        <p class="services__boxes-title">badanie USG</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-cow services__boxes-picture"></i>
+                        <p class="services__boxes-title">diagnoza i leczenie zwierząt gospodarskich</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-syringe services__boxes-picture"></i>
+                        <p class="services__boxes-title">konsultacje i zabiegi chirurgiczne</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-bone services__boxes-picture"></i>
+                        <p class="services__boxes-title">ortopedia i traumatologia</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-heart-pulse  services__boxes-picture"></i>
+                        <p class="services__boxes-title">położnictwo i ginekologia</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-stethoscope services__boxes-picture"></i>
+                        <p class="services__boxes-title">dermatologia</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-tooth services__boxes-picture"></i>
+                        <p class="services__boxes-title">stomatologia</p>
+                    </div>
+                    <div class="services__boxes">
+                        <img src="img/lapka.png" alt=" " class="services__boxes-bgimg">
+                        <i class="fa-solid fa-address-card services__boxes-picture"></i>
+                        <p class="services__boxes-title">chipowanie i paszporty dla zwierząt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grey_block"></div>
+        </section>
+        <section class="important-info section section_grey">
+            <div class="wrapper">
+                <h2 class="section__title">Chipowanie i paszporty</h2>
+                <div class="important-info__box">
+                    <i class="fa-solid fa-address-card important-info__box-icon"></i>
+                    <p class="important-info__box-text">W naszym gabinecie jest możliwość zachipowania zwierzęcia oraz wydania jemu paszportu. W przypadku zaginięcia zwierzęcia, chip może pomóc w jego szybszym odnalezieniu. Paszporty dla zwierząt domowych zawierają informacje o szczepieniach zwierzęcia, co pomaga w zapobieganiu rozprzestrzeniania się chorób. W niektórych krajach wymagane jest posiadanie paszportu dla zwierząt domowych w celu podróży.</p>
+                </div>
+            </div>
+            <div class="white_block"></div>
+        </section>
+        <section class="contact section">
+            <div class="wrapper">
+                <h2 class="section__title">Kontakt</h2>
+                <div class="contact__container">
+                    <div class="contact__box">
+                        <div class="contact__box-title">
+                            <i class="fa-solid fa-location-dot contact__box-title_icon"></i>
+                            <p class="contact__box-title_text">Adres</p>
+                        </div>
+                        <div class="contact__box-content">
+                            <p>Klonowa 19</p>
+                            <p>86-010 Koronowo</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__box">
+                        <div class="contact__box-title">
+                            <i class="fa-solid fa-phone contact__box-title_icon"></i>
+                            <p class="contact__box-title_text">Zadzwoń!</p>
+                        </div>
+                        <div class="contact__box-content">
+                            <p><a href="tel:+48600825032">+48 600 825 032</a></p>
+                            <p><a href="tel:+48600824007">+48 600 824 007</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact__box">
+                        <div class="contact__box-title">
+                            <i class="fa-solid fa-clock contact__box-title_icon"></i>
+                            <p class="contact__box-title_text">Godziny otwarcia</p>
+                        </div>
+                        <div class="contact__box-content">
+                            <p>pon-pt: 10:00 - 18:00</p>
+                            <p>sobota: 10:00 - 15:00</p>
+                        </div>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.9308874467083!2d17.9479927!3d53.308684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470305a2775e9ddd%3A0xe6472268cfbcda65!2sGabinet%20Weterynaryjny%20Natalia%20i%20Piotr%20Mitkowscy!5e0!3m2!1spl!2spl!4v1709474860841!5m2!1spl!2spl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact__map"></iframe>
+            </div>
+            <div class="grey_block"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__info">pionavet | <span class="footer__date"></span></p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,14 @@
+@use '_colors.scss' as *;
+@use '_animations.scss' as *;
+@use '_components.scss' as *;
+
+@mixin nav-line(){
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 80%;
+    background-color: $black;
+    transition: background-color .3s;
+}
